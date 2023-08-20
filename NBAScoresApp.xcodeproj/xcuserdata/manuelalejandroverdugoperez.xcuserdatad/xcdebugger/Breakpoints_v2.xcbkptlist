@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2551E8FA-033A-418E-9196-0D84322E5330"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D22D2D00-F04C-4A47-803E-6508B66A9498"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NBAScoresApp/core/constants/Utils.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "reorderStandings(array:originalArray:favourite:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D22D2D00-F04C-4A47-803E-6508B66A9498 - 23503f62e39c729a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NBAScoresApp.FavoriteTeamUtility.reorderStandings(array: inout Swift.Array&lt;NBAScoresApp.Standing&gt;, originalArray: Swift.Array&lt;NBAScoresApp.Standing&gt;, favourite: Swift.Optional&lt;NBAScoresApp.FavouriteTeamEntity&gt;) -&gt; ()"
+                  moduleName = "NBAScoresApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manuelalejandroverdugoperez/Desktop/CWC%20Challenges/NBAScoresApp/NBAScoresApp/core/constants/Utils.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "D22D2D00-F04C-4A47-803E-6508B66A9498 - 44598da9f9b525ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Int, NBAScoresApp.Standing) -&gt; () in static NBAScoresApp.FavoriteTeamUtility.reorderStandings(array: inout Swift.Array&lt;NBAScoresApp.Standing&gt;, originalArray: Swift.Array&lt;NBAScoresApp.Standing&gt;, favourite: Swift.Optional&lt;NBAScoresApp.FavouriteTeamEntity&gt;) -&gt; ()"
+                  moduleName = "NBAScoresApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manuelalejandroverdugoperez/Desktop/CWC%20Challenges/NBAScoresApp/NBAScoresApp/core/constants/Utils.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF850062-66B8-4F22-A0C4-19B933C277B3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NBAScoresApp/core/constants/Utils.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "reorderStandings(array:favourite:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
