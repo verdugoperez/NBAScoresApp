@@ -27,7 +27,9 @@ class StandingsViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.searchStandingsBy("2023")
+        let calendar = Calendar.current
+        let currentYear = calendar.component(.year, from: Date())
+        presenter.searchStandingsBy("\(currentYear)")
         setupUIComponents()
       
     }

@@ -18,7 +18,13 @@ class ScoresPresenter {
     private let scoresInteractor: ScoresInteractor
     var models = [Score]()
     private var originalModels = [Score]()
-   
+    private(set) var todayDateString = ""
+    private(set) var yesterdayDateString = ""
+    private(set) var tomorrowDateString = ""
+    private var dateFormatter = DateFormatter()
+    private var dateFormat = "yyyy-MM-dd"
+    private var calendar = Calendar.current
+
     var totalGames: String {
         "\(models.count) Games"
     }
@@ -31,7 +37,19 @@ class ScoresPresenter {
     
     init(scoresInteractor: ScoresInteractor) {
         self.scoresInteractor = scoresInteractor
+        dateFormatter.dateFormat = dateFormat
+        let currentDate = Date()
+        todayDateString = dateFormatter.string(from: currentDate)
+        
+        if let yesterday = calendar.date(byAdding: .day, value: -1, to: currentDate) {
+            yesterdayDateString = dateFormatter.string(from: yesterday)
+        }
+        
+        if let tomorrow = calendar.date(byAdding: .day, value: +1, to: currentDate) {
+            tomorrowDateString = dateFormatter.string(from: tomorrow)
+        }
     }
+    
    
     func getDayScores(_ dateString: String) {
         ui?.showLoader()

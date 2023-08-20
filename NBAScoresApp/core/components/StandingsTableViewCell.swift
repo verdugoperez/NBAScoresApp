@@ -75,15 +75,14 @@ class StandingsTableViewCell: UITableViewCell, ReusableCell {
         
         teamNumberLabel.text = "\(index)"
         teamStandingLabel.text = "\(model.wins) - \(model.losses)"
-        teamLabel.text = "\(model.city) \(model.name)"
         teamImageView.image = UIImage(named: model.key)
         
         if let _ = model.favouriteTeam {
-            teamLabel.text! += " ⭐️"
+            teamLabel.text = "\(model.city) \(model.name) ⭐️"
             teamLabel.textColor = .magenta
         } else {
             teamLabel.text = "\(model.city) \(model.name)"
-            teamLabel.textColor = .black
+            teamLabel.textColor = .label
         }
     }
 

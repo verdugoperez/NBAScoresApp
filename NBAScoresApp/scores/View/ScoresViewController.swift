@@ -20,11 +20,11 @@ class ScoresViewController: UIViewController {
     @objc private func segmentedControlValueChanged(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            presenter.getDayScores("2020-08-13")
+            presenter.getDayScores(presenter.yesterdayDateString)
         case 1:
-            presenter.getDayScores("2020-01-01")
+            presenter.getDayScores(presenter.todayDateString)
         case 2:
-            presenter.getDayScores("2020-06-08")
+            presenter.getDayScores(presenter.tomorrowDateString)
         default:
             break
         }
@@ -44,7 +44,7 @@ class ScoresViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupUIComponents()
-        presenter.getDayScores("2020-01-01")
+        presenter.getDayScores(presenter.todayDateString)
         NotificationCenter.default.addObserver(self, selector: #selector(receivedData(_:)), name: Notification.Name("SelectedFavouriteTeamNotification"), object: nil)
 
     }
